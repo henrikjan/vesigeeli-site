@@ -31,7 +31,7 @@
   header{
     background:linear-gradient(160deg,var(--moss-deep) 0%,var(--moss) 100%);
     color:#f3f6ef;
-    padding:64px 0 56px;
+    padding:60px 0 52px;
   }
   .brand{
     font-size:15px;letter-spacing:.14em;text-transform:uppercase;
@@ -39,9 +39,36 @@
   }
   header h1{
     font-size:clamp(28px,5vw,44px);
-    line-height:1.15;font-weight:700;max-width:16ch;margin-bottom:18px;
+    line-height:1.15;font-weight:700;max-width:20ch;margin-bottom:18px;
   }
-  header p{font-size:clamp(16px,2.4vw,19px);color:#dbe6da;max-width:52ch}
+  header p{font-size:clamp(16px,2.4vw,19px);color:#dbe6da;max-width:56ch}
+
+  /* problem exhibit */
+  .exhibit{padding:56px 0 8px}
+  .exhibit-inner{
+    display:grid;
+    grid-template-columns:minmax(0,300px) 1fr;
+    gap:36px;
+    align-items:center;
+  }
+  .exhibit-figure{margin:0}
+  .exhibit-figure img{
+    width:100%;height:auto;display:block;
+    border-radius:12px;
+    box-shadow:0 6px 22px rgba(28,43,33,.16);
+  }
+  .exhibit-eyebrow{
+    font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--sage);font-weight:700;margin-bottom:12px;
+  }
+  .exhibit-body{
+    font-size:18px;line-height:1.6;color:#3a4a3e;
+  }
+  .exhibit-body strong{color:var(--ink);font-weight:700}
+  @media(max-width:680px){
+    .exhibit-inner{grid-template-columns:1fr;gap:22px}
+    .exhibit-figure{max-width:340px;margin:0 auto}
+  }
 
   /* who's it for */
   .lede{padding:56px 0 8px;text-align:center}
@@ -115,6 +142,20 @@
     <p>BountiGel on kaliumpolyakrylaattiin perustuva superabsorbentti, joka sitoo veden ja lannoitteen juuristovyöhykkeelle ja vapauttaa ne kasvin tarpeeseen. Vähemmän kastelua, tasaisempi kasvu, pienempi ravinnehuuhtouma.</p>
   </div>
 </header>
+
+<section class="exhibit">
+  <div class="wrap">
+    <div class="exhibit-inner">
+      <figure class="exhibit-figure">
+        <img src="hero-box-seedlings.jpg" alt="Kuivunut taimen paakku ja toimituslaatikko taimineen">
+      </figure>
+      <div class="exhibit-text">
+        <div class="exhibit-eyebrow">Ongelma</div>
+        <p class="exhibit-body"><strong>Paakun kuivuminen kuljetuksen ja varastoinnin aikana heikentää juurten vedenottokykyä ja taimen elpymistä istutuksen jälkeen.</strong> Taimitarhalla lisätty vesigeeli pidättää kosteutta paakussa ja tasaa sen saatavuutta toimitusketjun läpi.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="lede">
   <div class="wrap">
