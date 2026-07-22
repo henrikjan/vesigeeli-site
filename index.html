@@ -70,13 +70,12 @@
     margin-bottom:22px;
   }
   /* mechanism chain */
-  .chain{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:14px;margin-bottom:22px;padding:0}
+  .chain{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:18px;margin-bottom:22px;padding:0}
   .chain li{
     counter-increment:step;
     display:flex;
     gap:14px;
     align-items:flex-start;
-    font-size:15.5px;line-height:1.55;color:#3a4a3e;
   }
   .chain li::before{
     content:counter(step);
@@ -85,9 +84,16 @@
     width:26px;height:26px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
     font-size:13px;font-weight:700;
-    margin-top:1px;
+    margin-top:2px;
   }
-  .chain li strong{color:var(--ink);font-weight:700}
+  .chain .step-body{display:flex;flex-direction:column}
+  .chain .claim{
+    font-size:15.5px;line-height:1.5;font-weight:700;color:var(--ink);
+    margin-bottom:3px;
+  }
+  .chain .detail{
+    font-size:15px;line-height:1.55;color:#54655a;
+  }
   .exhibit-data{
     border-left:3px solid var(--amber);
     padding:2px 0 2px 16px;
@@ -183,10 +189,10 @@
         <div class="exhibit-eyebrow">Ongelma ja mekanismi</div>
         <p class="exhibit-lead">Kuivunut paakku ei elvytä tainta, vaikka se kastellaan istutuksessa.</p>
         <ol class="chain">
-          <li><strong>Turvepaakku sisältää rajallisen määrän vettä.</strong> Kuljetuksen ja varastoinnin aikana kosteus haihtuu ilman täydennystä.</li>
-          <li><strong>Kuivuttuaan turve muuttuu vettä hylkiväksi.</strong> Se ei ime vettä takaisin edes istutuksen jälkeen, joten juuret jäävät kuiviksi.</li>
-          <li><strong>Kuivat juuret eivät ota vettä eivätkä siihen liuenneita ravinteita.</strong> Taimen elpyminen hidastuu tai epäonnistuu.</li>
-          <li><strong>Vesigeeli paakussa pidättää vettä ja vapauttaa sitä turpeen kuivuessa.</strong> Se tasaa kosteuden saatavuutta koko toimitusketjun ajan.</li>
+          <li><span class="step-body"><span class="claim">Turvepaakku sisältää rajallisen määrän vettä.</span><span class="detail">Kuljetuksen ja varastoinnin aikana kosteus haihtuu ilman täydennystä.</span></span></li>
+          <li><span class="step-body"><span class="claim">Kuivuttuaan turve muuttuu vettä hylkiväksi.</span><span class="detail">Se ei ime vettä takaisin edes istutuksen jälkeen, joten juuret jäävät kuiviksi.</span></span></li>
+          <li><span class="step-body"><span class="claim">Kuivat juuret eivät ota vettä eivätkä siihen liuenneita ravinteita.</span><span class="detail">Taimen elpyminen hidastuu tai epäonnistuu.</span></span></li>
+          <li><span class="step-body"><span class="claim">Vesigeeli paakussa pidättää vettä ja vapauttaa sitä turpeen kuivuessa.</span><span class="detail">Se tasaa kosteuden saatavuutta koko toimitusketjun ajan.</span></span></li>
         </ol>
         <p class="exhibit-data">Kaliumpolyakrylaatti sitoo <b>jopa 250-kertaisesti</b> painonsa verran vettä ja luovuttaa sen kasvin tarpeeseen. Valmistajan istutuskokeissa taimen elpyminen parani <b>20&ndash;33 %</b> jopa vähemmällä kastelulla (Carbon Neutral Ag Sciences, kenttäkoedata).</p>
       </div>
