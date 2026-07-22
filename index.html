@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vesigeeli - kosteus ja ravinteet juuristossa</title>
+<meta name="description" content="BountiGel-superabsorbentti Suomen viljelyyn ja nurmelle. Pitää veden ja ravinteet juuristossa. Vähemmän kastelua, tasaisempi kasvu.">
+<style>
+  :root{
+    --ink:#1c2b21;
+    --moss:#3a5a40;
+    --moss-deep:#2d4632;
+    --sage:#6b8f71;
+    --paper:#f7f5ef;
+    --card:#ffffff;
+    --line:#dfe3d8;
+    --amber:#c9832b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  /* header */
+  header{
+    background:linear-gradient(160deg,var(--moss-deep) 0%,var(--moss) 100%);
+    color:#f3f6ef;
+    padding:64px 0 56px;
+  }
+  .brand{
+    font-size:15px;letter-spacing:.14em;text-transform:uppercase;
+    color:#bcd0be;font-weight:600;margin-bottom:20px;
+  }
+  header h1{
+    font-size:clamp(28px,5vw,44px);
+    line-height:1.15;font-weight:700;max-width:16ch;margin-bottom:18px;
+  }
+  header p{font-size:clamp(16px,2.4vw,19px);color:#dbe6da;max-width:52ch}
+
+  /* who's it for */
+  .lede{padding:56px 0 8px;text-align:center}
+  .lede h2{font-size:clamp(22px,3.4vw,30px);font-weight:700;margin-bottom:12px}
+  .lede p{color:#4a5a4e;max-width:56ch;margin:0 auto;font-size:17px}
+
+  /* segment cards */
+  .cards{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;padding:40px 0 8px;
+  }
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:28px 26px;display:flex;flex-direction:column;
+    box-shadow:0 1px 2px rgba(28,43,33,.04);
+  }
+  .tag{
+    font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--sage);font-weight:700;margin-bottom:10px;
+  }
+  .card h3{font-size:21px;font-weight:700;margin-bottom:12px;color:var(--moss-deep)}
+  .card p{color:#48564b;font-size:15.5px;flex-grow:1}
+  .card .claim{
+    margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
+    font-weight:600;color:var(--ink);font-size:15px;
+  }
+
+  /* how it works */
+  .how{padding:52px 0 8px}
+  .how h2{text-align:center;font-size:clamp(22px,3.4vw,28px);margin-bottom:32px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+  .step{display:flex;gap:14px;align-items:flex-start}
+  .num{
+    flex-shrink:0;width:34px;height:34px;border-radius:50%;
+    background:var(--moss);color:#fff;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:15px;
+  }
+  .step h4{font-size:16px;margin-bottom:4px}
+  .step p{font-size:14.5px;color:#556359}
+  .source{text-align:center;margin-top:34px;font-size:14px;color:#6b7a6f}
+  .source a{color:var(--moss);font-weight:600}
+
+  /* contact */
+  .contact{
+    margin:56px 0;background:var(--moss-deep);color:#eef3ec;
+    border-radius:16px;padding:44px 32px;text-align:center;
+  }
+  .contact h2{font-size:clamp(22px,3.4vw,28px);margin-bottom:12px}
+  .contact p{color:#cfe0cd;max-width:48ch;margin:0 auto 24px;font-size:16.5px}
+  .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{
+    display:inline-block;padding:13px 26px;border-radius:10px;
+    font-weight:600;font-size:16px;text-decoration:none;transition:transform .08s ease;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--amber);color:#fff}
+  .btn-ghost{background:transparent;color:#eef3ec;border:1px solid #6f8a72}
+
+  /* footer */
+  footer{padding:32px 0 48px;text-align:center;color:#6b7a6f;font-size:13.5px}
+  footer .biz{font-weight:600;color:#4a5a4e}
+  footer a{color:#4a5a4e}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Vesigeeli.fi</div>
+    <h1>Kosteus ja ravinteet pysyvät juuristossa</h1>
+    <p>BountiGel on kaliumpolyakrylaattiin perustuva superabsorbentti, joka sitoo veden ja lannoitteen juuristovyöhykkeelle ja vapauttaa ne kasvin tarpeeseen. Vähemmän kastelua, tasaisempi kasvu, pienempi ravinnehuuhtouma.</p>
+  </div>
+</header>
+
+<section class="lede">
+  <div class="wrap">
+    <h2>Kenelle?</h2>
+    <p>Vesigeeli tuo eniten hyötyä siellä, missä kastelu, ravinnehukka tai kasvin stressi maksavat rahaa. Katso oma alueesi.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="cards">
+
+    <div class="card">
+      <div class="tag">Kasvihuone</div>
+      <h3>Taimet ja korkean arvon vihannekset</h3>
+      <p>Geeli pitää kasvualustan kosteuden tasaisena kastelujen välillä ja vähentää ravinteen kulkeutumista pois juuristosta. Taimikohtainen tasaisuus ja istutusstressin väheneminen näkyvät sadon laadussa.</p>
+      <div class="claim">Tasaisempi kosteus, vähemmän istutusstressiä, ravinne pysyy juurella.</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Golf &amp; viheralueet</div>
+      <h3>Ammattimainen nurmenhoito</h3>
+      <p>Geeli voidaan syöttää olemassa olevan ilmastus- ja injektointikäsittelyn mukana suoraan kasvualustaan ilman erillistä työvaihetta. Vesi ja ravinne pysyvät juuristossa myös kuivilla, hiekkapohjaisilla viheriöillä.</p>
+      <div class="claim">Kulkee nykyisen käsittelyn mukana - ei ylimääräistä työvaihetta.</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">Metsänviljely</div>
+      <h3>Turpeen korvaaja ja taimen toimitus</h3>
+      <p>Hydrogeeli on Suomen metsänviljelyssä tuttu käytäntö. Vesigeeli auttaa korvaamaan turvepohjaisia ratkaisuja ja suojaa paljasjuuri- ja paakkutaimia kuivumiselta maastovarastoinnin ja istutuksen aikana.</p>
+      <div class="claim">Vähemmän turvetta, taimet eivät kuivu kentällä.</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <h2>Miten se toimii</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h4>Sitoo</h4>
+          <p>Kaksoisristisilloitettu rakenne imee vettä ja ravinteita moninkertaisesti omaan painoonsa.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h4>Pitää juuristossa</h4>
+          <p>Mekaanisesti luja - ei hajoa käytössä eikä nouse pintaan, vaan pysyy juuristovyöhykkeellä.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h4>Vapauttaa tarpeeseen</h4>
+          <p>Luovuttaa veden ja ravinteet kasvin käyttöön, tasaa kuivia jaksoja ja vähentää huuhtoumaa.</p>
+        </div>
+      </div>
+    </div>
+    <p class="source">BountiGelin valmistaja on <a href="https://carbonneutralagsciences.com/" target="_blank" rel="noopener">Carbon Neutral Ag Sciences</a> (USA). Tuotetiedot ja laaja viljelykoedata: <a href="https://carbonneutralagsciences.com/crop-data/" target="_blank" rel="noopener">koetulokset</a>.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="contact">
+    <h2>Kokeilisitteko?</h2>
+    <p>Meillä on näyte-eriä Suomessa. Jos alueesi tunnistui yllä, otetaan yhteyttä ja katsotaan sopiiko pieni koe teidän oloihinne.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:henrik@vesigeeli.fi">henrik@vesigeeli.fi</a>
+      <a class="btn btn-ghost" href="tel:+358405326009">040 532 6009</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="biz">Fat Tails Oy &middot; Y-tunnus 2806299-1</div>
+    <div>Kirkkonummi, Suomi &middot; <a href="mailto:henrik@vesigeeli.fi">henrik@vesigeeli.fi</a></div>
+    <div style="margin-top:6px">Valmistaja: <a href="https://carbonneutralagsciences.com/" target="_blank" rel="noopener">Carbon Neutral Ag Sciences</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
